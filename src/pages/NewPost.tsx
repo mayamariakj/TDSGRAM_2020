@@ -34,12 +34,12 @@ const triggerCamera = async () => {
     });
 };
 
-/*const uploadImage = async () =>{
+const uploadImage = async () =>{
     await startUploading({
-        base64String:  photo?.dataUrl,
+        base64String:  photo?.dataUrl!,
         filenameWithExtension: `${Date.now().toString()}.jpeg`
     })
-}*/
+}
 
 
         return (
@@ -53,7 +53,7 @@ const triggerCamera = async () => {
                     <IonCard>
                         <img src ={photo?.dataUrl}/>
                         <IonButton onClick={triggerCamera}>Ta bilde</IonButton>
-                        <IonButton onClick={useImageUpload}>Last opp bilde</IonButton>
+                        <IonButton onClick={uploadImage}>Last opp bilde</IonButton>
                     </IonCard>
                 </IonContent>
             </IonPage>
