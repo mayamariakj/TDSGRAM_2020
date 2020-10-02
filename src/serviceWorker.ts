@@ -20,6 +20,8 @@ const isLocalhost = Boolean(
     )
 );
 
+//wasd
+
 type Config = {
   onSuccess?: (registration: ServiceWorkerRegistration) => void;
   onUpdate?: (registration: ServiceWorkerRegistration) => void;
