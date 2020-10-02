@@ -58,6 +58,9 @@ const Login = () => {
                          <IonIcon icon={arrowForwardCircle}/>
                      } 
                 </LoginButton>
+                <IonButton onClick={() =>  history.replace("/newpost")}>
+                    Hopp til new post-side
+                </IonButton>
                 </CenterContainer>
                 <IonToast
                 isOpen={showErrorToast}
@@ -81,6 +84,7 @@ const IonContentStyled = styled(IonContent)`
 --background: none;
 background: url("data:image/svg+xml, ${waveBlobString}") no-repeat fixed;
 background-size: cover;
+background-color: white;
 `;
 
 const PageTitle = styled.h1`

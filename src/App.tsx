@@ -27,6 +27,7 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import NewPost from './pages/NewPost';
 
 
 const App: React.FC = () => (
@@ -37,6 +38,7 @@ const App: React.FC = () => (
           <IonRouterOutlet>
             <Route path="/login" component ={Login}  exact={true}/> 
             <Route path="/home" component={Home} exact={true} />
+            <Route path="/newpost" component={NewPost} exact={true} />
             <Route path="/detail/:id" component={Detail} exact={true} />
             <Route exact path="/" render={() => <Redirect to="/login" />} />
           </IonRouterOutlet>

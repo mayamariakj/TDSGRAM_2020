@@ -6,7 +6,7 @@ const PostCard = ({ id, title, description, user }: IPost) => {
 
   return (
     <IonCard>
-      <img src="assets/tent-picture.jpeg" />
+      <img src="assets/tent-picture.jpeg" alt="tent"/>
       <IonCardHeader>
         <IonCardSubtitle>
           @ {user.display_name} &bull; ? likes

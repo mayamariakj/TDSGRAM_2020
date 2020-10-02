@@ -29,7 +29,7 @@ const Detail = (props: any) => {
            {post?.comments?.map((Comment, i)=>( 
               <IonItem key={i}>
                 <IonAvatar slot="start">
-                  <img src={Comment.profileImageURL}/>
+                  <img src={Comment.profileImageURL}alt="profileImage"/>
                 </IonAvatar>
                 <IonLabel>
             <h3>{Comment.date}</h3>
