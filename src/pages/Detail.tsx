@@ -27,7 +27,6 @@ const Detail = (props: any) => {
   if(!post){
     return <div></div>;
   }
-//prøver men failer 
 
 const insertComment = async () => {
   try {
