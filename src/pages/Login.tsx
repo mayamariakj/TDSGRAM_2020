@@ -58,8 +58,8 @@ const Login = () => {
                          <IonIcon icon={arrowForwardCircle}/>
                      } 
                 </LoginButton>
-                <IonButton onClick={() =>  history.replace("/newpost")}>
-                    Hopp til new post-side
+                <IonButton onClick={() =>  history.replace("/register")}> {/*=>  history.replace("/registeruser")}>*/}
+                    Registrer deg
                 </IonButton>
                 </CenterContainer>
                 <IonToast

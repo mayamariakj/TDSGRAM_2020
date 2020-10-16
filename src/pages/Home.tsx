@@ -19,6 +19,7 @@ query {
     title
     id
     user{
+      id
       display_name
     }
     comments{
@@ -58,7 +59,7 @@ const logout = async () => {
       <IonHeader>
         <IonToolbar>
           <IonButtons slot={'start'}>
-            <IonBackButton defaultHref="/home"/>
+           {/* <IonBackButton defaultHref="/home"/> */}
           </IonButtons>
           <IonButtons slot={'start'}>
             <IonButton onClick={logout}>

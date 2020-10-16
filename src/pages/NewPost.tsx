@@ -1,4 +1,4 @@
-import { IonButton, IonCard, IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToolbar, IonList, IonItem } from "@ionic/react";
+import { IonButton, IonCard, IonContent, IonHeader, IonInput, IonPage, IonTitle, IonToolbar, IonList, IonItem, IonProgressBar } from "@ionic/react";
 import React, { useState } from "react";
 import {useCamera} from "@capacitor-community/react-hooks/camera"; 
 import { CameraResultType } from "@capacitor/core";
@@ -126,6 +126,7 @@ const insertPost = async () => {
                         <IonButton onClick={triggerCamera}>Ta bilde</IonButton>
                         <IonButton onClick={uploadImage}>Last opp bilde ({filename})</IonButton>
                         <IonButton onClick={insertPost}>Send post</IonButton>
+                        <IonProgressBar value={uploadProgress}></IonProgressBar>
                     </IonCard>
                 </IonContent>
             </IonPage>
